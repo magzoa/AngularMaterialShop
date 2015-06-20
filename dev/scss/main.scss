@@ -1,0 +1,29 @@
+a {
+  text-decoration: none !important;
+  text-color: black !important;
+}
+
+.productos {
+  .producto-item {
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+    img {
+      height: 200px;
+      width: auto;
+      margin: 0 auto;
+    }
+  }
+  .fab {
+    position: fixed;
+    top: 80px;
+    right: 10px;
+  }
+}
+
+.carrito {
+  .cell {
+    width: 22%;
+    display: inline-block;
+  }
+}

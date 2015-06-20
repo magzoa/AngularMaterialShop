@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "authors": "Sergio Castillo",
   "private": false,
-  "dependencies": {},
+  "dependencies": {
+    "lumx": "~0.3.40",
+    "angular-route": "~1.4.1"
+  },
   "devDependencies": {}
 }

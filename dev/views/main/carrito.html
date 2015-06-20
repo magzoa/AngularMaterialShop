@@ -1,0 +1,47 @@
+<div class="carrito card">
+    <div class="toolbar bgc-yellow-900 tc-white-1 p+">
+        <div class="toolbar__left mr+++">
+            <a href="#/categorias">
+                <button class="btn btn--l btn--black btn--icon" lx-ripple>
+                    <i class="fa fa-bars"></i>
+                </button>
+            </a>
+        </div>
+
+        <span class="toolbar__label fs-title">Carrito</span>
+    </div>
+    <div flex-container="row" flex-gutter="24" flex-wrap>
+        <div flex-item="12">
+            <ul class="list mt++">
+                <li class="list-row list-row--has-separator">
+                    <div class="list-row__primary">
+
+                    </div>
+
+                    <div class="list-row__content">
+                        <div>
+                            <span class="cell">Descripcion</span>
+                            <span class="cell">Precio</span>
+                            <span class="cell">Cantidad</span>
+                            <span class="cell">Precio Final</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-row list-row--has-separator" ng-repeat="i in carrito">
+                    <div class="list-row__primary">
+                        <i class="fa fa-heartbeat"></i>
+                    </div>
+
+                    <div class="list-row__content">
+                        <div>
+                            <span class="cell">{{ i.descripcion }}</span>
+                            <span class="cell">{{ i.precio }}</span>
+                            <input class="cell" type="text" ng-model="i.cantidad"/>
+                            <span class="cell">{{ i.precio * i.cantidad }}</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

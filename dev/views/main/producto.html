@@ -1,0 +1,43 @@
+<div class="productos">
+    <div class="card">
+        <div class="toolbar bgc-yellow-900 tc-white-1 p+">
+
+            <div class="toolbar__left mr+++">
+                <a href="#/categorias">
+                    <button class="btn btn--l btn--black btn--icon" lx-ripple>
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </a>
+            </div>
+
+            <span class="toolbar__label fs-title">Productos de {{ categoria }}</span>
+        </div>
+    </div>
+    <div class="card producto-item" ng-repeat="p in productos">
+        <div class="card__img card__img--top">
+            <img ng-src="{{ p.imagen }}">
+            <span class="fs-headline tc-orange-900 display-block">{{ p.descripcion }}</span>
+        </div>
+
+        <div class="p+">
+            <span class="fs-subhead tc-black-2 display-block">{{ p.descripcion }}</span>
+
+            <div class="paragraph fs-body-1">
+                <p>
+                    {{ p.precio | currency }}
+                </p>
+            </div>
+        </div>
+
+        <div class="card__actions">
+            <button class="btn btn--m btn--black btn--flat" ng-click="agregar(p)" lx-ripple>Comprar</button>
+        </div>
+    </div>
+    <div class="fab">
+        <a href="#/carrito">
+        <button class="fab__primary btn btn--xl btn--red btn--fab" lx-ripple lx-tooltip="Añadir">
+            <i class="fa fa-plus"></i>
+        </button>
+    </div>
+    </a>
+</div>

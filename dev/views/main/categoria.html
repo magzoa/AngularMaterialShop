@@ -1,0 +1,30 @@
+<div class="card">
+    <div class="toolbar bgc-yellow-900 tc-white-1 p+">
+        <div class="toolbar__left mr+++">
+            <a href="#/categorias">
+                <button class="btn btn--l btn--black btn--icon" lx-ripple>
+                    <i class="fa fa-bars"></i>
+                </button>
+            </a>
+        </div>
+
+        <span class="toolbar__label fs-title">Categorias</span>
+    </div>
+    <div flex-container="row" flex-gutter="24" flex-wrap>
+        <div flex-item="12">
+            <ul class="list mt++">
+                <a href="#/productos/{{ c.id }}/{{ c.descripcion }}" ng-repeat="c in categorias">
+                    <li class="list-row list-row--has-separator">
+                        <div class="list-row__primary">
+                            <i class="fa fa-heartbeat"></i>
+                        </div>
+
+                        <div class="list-row__content">
+                            <span>{{ c.descripcion }}</span>
+                        </div>
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </div>
+</div>

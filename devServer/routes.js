@@ -5,15 +5,19 @@ module.exports = function (app) {
     var categorias = [
             {
                 "id": "1",
-                "descripcion": "Librería"
+                "descripcion": "Libreria"
             },
             {
                 "id": "2",
-                "descripcion": "Baño"
+                "descripcion": "Limpieza"
             },
             {
                 "id": "3",
                 "descripcion": "Alimentos"
+            },
+            {
+                "id": "all",
+                "descripcion": "Todo"
             }
         ],
         productos = [

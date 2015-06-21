@@ -1,31 +1,31 @@
-# StarterAngularProject
+# Angular Material Shop
 
-All what you need to start an angular project
+Carrito de Compra en Angular Y Material Design
 
 ##Instalation
 
-First run a
+Despues de clonar, ejecutar
 
     sudo npm install
 
-and then
+y luego
 
     bower install
 
-with that you should get all the dependencies
+y obtendras todas las dependencias
 
 ##Test Environment
 
-if you want to test
+Para correr el ambiente de desarrollo:
 
     gulp watch-dev
 
-then go to localhost:8080
+e ir a http://localhost:8080
 
-##Deploying
+##Prod Enviroment
 
-before each deploy, run a
+Para correr el ambiente de produccion:
 
     gulp-watch-prod
 
-so you can test what you will get on production. If everything goes wrong, git commit and push to your repository
+todo estara minificado y listo para subirlo a cualquier servidor
